@@ -114,8 +114,8 @@ export default function ComponentShowcase() {
                       size="icon"
                       className={`h-8 w-8 ${
                         isDarkMode
-                          ? "hover:bg-neutral-800 text-neutral-400 hover:text-neutral-200"
-                          : "hover:bg-gray-200 text-gray-600 hover:text-gray-800"
+                          ? "bg-neutral-900 hover:bg-neutral-800 text-neutral-400 hover:text-neutral-200"
+                          : "bg-gray-200 hover:bg-gray-200 text-gray-600 hover:text-gray-800"
                       }`}
                     >
                       <RefreshCw className="h-4 w-4" />
@@ -142,16 +142,33 @@ export default function ComponentShowcase() {
 
                     {/* Component Name - Centered Below */}
                     <h3
-                      className={`text-center text-sm font-semibold ${
+                      className={`text-center text-md font-bold ${
                         isDarkMode ? "text-neutral-200" : "text-gray-800"
                       }`}
                     >
                       {item.name}
                     </h3>
+                    <p
+                      className={`text-center text-xs mt-1 ${
+                        isDarkMode ? "text-neutral-500" : "text-gray-500"
+                      }`}
+                    >
+                      Refresh if you missed!
+                    </p>
                   </div>
                 </div>
               );
             })}
+          </div>
+          <div className="text-center mt-12">
+            <p
+              className={`text-sm ${
+                isDarkMode ? "text-neutral-500" : "text-gray-500"
+              }`}
+            >
+              The Animations look crazy in{" "}
+              {isDarkMode ? "Light Mode" : "Dark Mode"}!
+            </p>
           </div>
         </div>
       </main>
@@ -185,10 +202,21 @@ export default function ComponentShowcase() {
             <div className="flex items-center gap-4">
               <div className="flex gap-3">
                 {[
-                  { icon: Github, href: "#", label: "GitHub" },
-                  { icon: Twitter, href: "#", label: "Twitter" },
-                  { icon: Linkedin, href: "#", label: "LinkedIn" },
-                  { icon: Instagram, href: "#", label: "Instagram" },
+                  {
+                    icon: Github,
+                    href: "https://github.com/sehajmakkar",
+                    label: "GitHub",
+                  },
+                  {
+                    icon: Twitter,
+                    href: "https://x.com/sehajmakkarr",
+                    label: "Twitter",
+                  },
+                  {
+                    icon: Linkedin,
+                    href: "https://www.linkedin.com/in/sehajmakkar/",
+                    label: "LinkedIn",
+                  },
                 ].map(({ icon: Icon, href, label }) => (
                   <a
                     key={label}
