@@ -1,4 +1,4 @@
-import Aceternity from '@/loaders/Ace/Animation2';
+import Aceternity from '@/loaders/Ace/Loader2';
 
 export default function Home() {
   return (
