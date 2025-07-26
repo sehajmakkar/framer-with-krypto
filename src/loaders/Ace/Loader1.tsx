@@ -18,7 +18,7 @@ const Aceternity = () => {
         ease: "easeInOut",
       },
     },
-  };
+  } as const;
 
   return (
     <div className="flex items-center justify-center">

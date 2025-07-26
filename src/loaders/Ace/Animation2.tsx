@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 const Aceternity = () => {
   const leftAVariants = {
@@ -16,7 +16,7 @@ const Aceternity = () => {
         fillOpacity: { duration: 1.2, ease: "easeInOut", delay: 0.8 },
       },
     },
-  };
+  } as const;
 
   const rightAVariants = {
     hidden: {
@@ -31,7 +31,7 @@ const Aceternity = () => {
         fillOpacity: { duration: 1.2, ease: "easeInOut", delay: 1.1 },
       },
     },
-  };
+  } as const;
 
   const containerVariants = {
     hidden: {},
@@ -44,7 +44,7 @@ const Aceternity = () => {
         ease: "easeInOut",
       },
     },
-  };
+  } as const;
 
   return (
     <div className="flex items-center justify-center">
