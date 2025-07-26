@@ -10,8 +10,8 @@ const Aceternity = () => {
           xmlns="http://www.w3.org/2000/svg"
           xmlSpace="preserve"
           viewBox="0 0 512 512"
-          width="100"
-          height="100"
+          width="150"
+          height="150"
           className="text-transparent"
         >
           {/* Background paths (lighter color) */}
@@ -30,8 +30,8 @@ const Aceternity = () => {
           xmlns="http://www.w3.org/2000/svg"
           xmlSpace="preserve"
           viewBox="0 0 512 512"
-          width="100"
-          height="100"
+          width="150"
+          height="150"
           className="absolute inset-0 text-blue-600"
         >
           {/* Define gradients and filters for 3D effect */}
