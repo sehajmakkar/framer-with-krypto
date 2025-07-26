@@ -92,7 +92,7 @@ export default function ComponentShowcase() {
       </header>
 
       {/* Main Content */}
-      <main className="px-6 md:px-12 pb-12">
+      <main className="px-6 md:px-12 pb-10">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {components.map((item, index) => {
@@ -175,7 +175,7 @@ export default function ComponentShowcase() {
 
       {/* Footer */}
       <footer
-        className={`mt-16 border-t ${
+        className={`mt-13 border-t ${
           isDarkMode
             ? "border-neutral-800 bg-neutral-950/50"
             : "border-gray-200 bg-gray-50/50"
